@@ -1,0 +1,47 @@
+.footer {
+  &__body,
+  &__contacts,
+  &__contact {
+    display: flex;
+    align-items: center;
+  }
+  &__body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    column-gap: 270px;
+
+    @include breakpoint($md-2, 0) {
+      column-gap: 86px;
+    }
+    @include breakpoint($md-3, 0) {
+      column-gap: 65px;
+      flex-direction: column-reverse;
+      align-items: stretch;
+      row-gap: 20px;
+    }
+  }
+  &__copyright{
+    font-weight: 700;
+  }
+  &__contacts {
+    column-gap: 143px;
+    @include breakpoint($md-2, 0) {
+      column-gap: 50px;
+    }
+    @include breakpoint($md-3, 0){
+        flex-direction: column;
+        align-items: stretch;
+        row-gap: 20px;
+    }
+  }
+  &__contact {
+    color: inherit;
+    column-gap: 17px;
+    &:hover {
+      text-decoration: underline;
+    }
+    @include breakpoint($md-2, 0) {
+        column-gap: 12px;
+      }
+  }
+}

@@ -1,0 +1,33 @@
+@import "./vars";
+@import "./reboot";
+@import "./functions";
+@import "./mixins";
+@import "./fonts";
+@import "components/container";
+@import "components/ui";
+@import "components/header";
+@import "components/footer";
+@import "components/intro";
+@import "components/about";
+@import "components/offer";
+
+body {
+  font-size: $fontSize;
+  font-weight: 400;
+  background-color: #000;
+  color: $primary;
+  font-family: $fontFamily;
+  @include breakpoint($md-2, 0){
+    font-size: 18px;
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  margin-top: 20px;
+}

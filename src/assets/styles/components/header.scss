@@ -1,0 +1,27 @@
+.header{
+  &__body{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &__logo{
+    display: inline-block;
+    width: 237px;
+    height: 70px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    @include breakpoint($md-2, 0){
+      width: 157px;
+      height: 46px;
+    }
+    @include breakpoint($md-3, 0){
+      width: 146px;
+      height: 43px;
+    }
+    @include breakpoint($md-4, 0){
+      width: 90px;
+      height:24px;
+    }
+  }
+}

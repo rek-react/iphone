@@ -1,0 +1,39 @@
+.intro{
+    &__image{
+        position: relative;
+        padding-bottom: 40%;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+.content-intro{
+    margin-top: 25px;
+    text-align: center;
+    &__title{
+        font-family: $fontFamilySec;
+        font-size: 128px;
+        margin-bottom: 35px;
+        @include breakpoint($md-2, 0){
+            font-size: 96px;
+            margin-bottom: 30px;
+        }
+        @include breakpoint($md-3, 0){
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        @include breakpoint($md-4, 0){
+            font-size: 40px;
+        }
+    }
+    @include breakpoint($md-2, 0){
+        margin-top: 30px;
+    }
+    @include breakpoint($md-3, 0){
+        margin-top: 40px;
+    }
+}
